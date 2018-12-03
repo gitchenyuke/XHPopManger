@@ -130,7 +130,7 @@ class XHPopAnimationManger: UIView {
         for (i , btn) in self.subviews.enumerated() {
             
             if btn.isKind(of: CompostButton.self) || btn.isKind(of: UILabel.self) {
-                // 创建动画
+                // 创建动画 根据Y轴
                 let anim: POPSpringAnimation = POPSpringAnimation.init(propertyNamed: kPOPLayerPositionY)
                 // 弹力系数，取值范围 0~20，数值越大，弹性越大，默认数值为4
                 anim.springBounciness = kSpringFactor
